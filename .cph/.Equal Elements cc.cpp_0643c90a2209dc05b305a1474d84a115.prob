@@ -1,0 +1,1 @@
+{"name":"Local: Equal Elements cc","url":"c:\\Users\\vaibh\\OneDrive\\Desktop\\college\\CP\\Equal Elements cc.cpp","tests":[{"id":1702495001541,"input":"3\n3\n1 2 3\n4\n2 2 3 1\n4\n3 1 2 4","output":"2\n2\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\vaibh\\OneDrive\\Desktop\\college\\CP\\Equal Elements cc.cpp","group":"local","local":true}

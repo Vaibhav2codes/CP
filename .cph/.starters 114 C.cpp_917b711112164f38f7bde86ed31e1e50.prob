@@ -1,0 +1,1 @@
+{"name":"Local: starters 114 C","url":"c:\\Users\\vaibh\\OneDrive\\Desktop\\college\\CP\\starters 114 C.cpp","tests":[{"id":1703689014460,"input":"3\n2\n1 2\n3\n3 1 2\n4\n2 3 4 1","output":"0\n2\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\vaibh\\OneDrive\\Desktop\\college\\CP\\starters 114 C.cpp","group":"local","local":true}

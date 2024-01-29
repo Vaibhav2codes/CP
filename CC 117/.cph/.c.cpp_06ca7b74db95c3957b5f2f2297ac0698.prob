@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"c:\\Users\\vaibh\\OneDrive\\Desktop\\college\\CP\\CC 117\\c.cpp","tests":[{"id":1705504980043,"input":"4\n4 4\n5 4\n1 8\n1 9","output":"0\n1\n5\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\vaibh\\OneDrive\\Desktop\\college\\CP\\CC 117\\c.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"c:\\Users\\vaibh\\OneDrive\\Desktop\\college\\CP\\cf 921 div 2\\C.cpp","tests":[{"id":1706371010521,"input":"3\n2 2 4\nabba\n2 2 3\nabb\n3 3 10\naabbccabab","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\vaibh\\OneDrive\\Desktop\\college\\CP\\cf 921 div 2\\C.cpp","group":"local","local":true}
