@@ -4,15 +4,6 @@
 
 using namespace std;
 
-// bool checkodd(int n, int k)
-// {
-//     if (n % 2 && k % 2)
-//     {
-//         return true;
-//     }
-//     else
-//         return false;
-// }
 void makesvaibhav(int k, string &s)
 {
     for (int i = 0; i < k; i++)
