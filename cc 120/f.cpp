@@ -1,6 +1,9 @@
-#include <iostream>
 #include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
+#define int long long
+#define endl "\n"
+#define mod 1000000007
 void func(int a)
 {
     int temp = a + 2 + a * a;
@@ -10,53 +13,80 @@ int func2(int b)
     int temp = b + b + b + 2 * b;
     return temp;
 }
-int main()
+int32_t main()
 {
-    func(3);
-    func(5);
-    func(3);
-    func(3);
-    int vaibhavinteger2 = func2(5);
-    func(3);
-    int vaibhavinteger3 = func2(5);
-
-    int t;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t = 1;
     cin >> t;
     while (t--)
     {
-        int n;
-        cin >> n;
-        vector<int> v(2 * n);
-        for (int i = 0; i < 2 * n; i++)
+        int n, k;
+        cin >> n >> k;
+        if (k > ((n - 1) * (n - 1)) || k < (((n - 1) * n) / 2))
         {
-            cin >> v[i];
+            cout << -1 << endl;
         }
-        unordered_set<int> s;
-        vector<int> ans;
-        for (int i = 0; i < 2 * n; i++)
+        else if (n == 1)
         {
-            if (s.find(v[i]) == s.end())
+            cout << 1 << endl;
+        }
+        else
+        {
+            vector<int> a(n, 0);
+            a[0] = 1;
+            vector<int> b(n, 0);
+            for (int i = 1; i < (n); i++)
             {
-                s.insert(v[i]);
+                b[i] = i;
+                k -= (i);
             }
-            else
+            int l = n - 2;
+            while (k)
             {
-                ans.push_back(v[i]);
-                s.erase(v[i]);
+                int f = n - 1 - b[l];
+                f = min(f, k);
+                k -= f;
+                b[l] += f;
+                l--;
             }
+            int f = 0;
+            a[0] = 1;
+            set<int> s, ss;
+            for (int i = 1; i <= n; i++)
+            {
+                s.insert(i);
+                ss.insert(1 + b[i - 1]);
+            }
+            ss.erase(0);
+            while (!ss.empty())
+            {
+                s.erase(*ss.begin());
+                ss.erase(ss.begin());
+            }
+            if (s.find(1) != s.end())
+            {
+                s.erase(1);
+            }
+            for (int i = 1; i < n; i++)
+            {
+                if (f == b[i])
+                {
+                    a[i] = (*s.begin());
+                    s.erase(s.begin());
+                }
+                else
+                {
+                    f = b[i];
+                    a[i] = 1 + f;
+                }
+            }
+            for (int i = 0; i < n; i++)
+            {
+                cout << a[i] << " ";
+            }
+            cout << endl;
         }
-        for (int i = ans.size() - 1; i >= 0; i--)
-        {
-            cout << ans[i] << " ";
-        }
-        cout << endl;
     }
-    func(3);
-    int vaibhavinteger4 = func2(5);
-    func(3);
-    int vaibhavinteger5 = func2(5);
-    func(3);
-    int vaibhavinteger6 = func2(5);
-    int vaibhavinteger7 = func2(5);
     return 0;
 }
